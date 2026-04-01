@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Renacidos FC - Art Edition</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      /* Fondo con gradiente abstracto azul y verde */
+      background: #000428; 
+      background: linear-gradient(135deg, #000428 0%, #004e92 50%, #00b09b 100%);
+      background-attachment: fixed;
+      color: white;
+      text-align: center;
+      padding-bottom: 50px;
+    }
+
+    header {
+      padding: 40px 20px;
+      /* Trazos lindos: un borde inferior con brillo */
+      border-bottom: 5px solid #96fbc4;
+      background: rgba(0, 0, 0, 0.3);
+      backdrop-filter: blur(10px);
+    }
+
+    h1 {
+      font-size: 3em;
+      margin: 0;
+      text-transform: uppercase;
+      letter-spacing: 5px;
+      /* Texto con brillo tipo neon */
+      text-shadow: 0 0 10px #96fbc4, 0 0 20px #00b09b;
+    }
+
+    .tagline {
+      color: #96fbc4;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+    section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .box {
+      /* Estilo abstracto: bordes muy redondeados y sombras suaves */
+      background: rgba(255, 255, 255, 0.1);
+      border: 2px solid rgba(150, 251, 196, 0.5);
+      margin: 20px;
+      padding: 25px;
+      border-radius: 30px 5px 30px 5px; /* Bordes asimétricos lindos */
+      max-width: 450px;
+      width: 90%;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+      transition: transform 0.3s ease;
+    }
+
+    .box:hover {
+      transform: scale(1.05);
+      border-color: #96fbc4;
+    }
+
+    h2 {
+      color: #96fbc4;
+      border-bottom: 2px dashed #004e92;
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+
+    .btn-action {
+      background: linear-gradient(90deg, #00b09b, #96fbc4);
+      border: none;
+      padding: 15px 30px;
+      border-radius: 50px;
+      color: #000428;
+      font-weight: bold;
+      font-size: 1.1em;
+      cursor: pointer;
+      box-shadow: 0 5px 15px rgba(150, 251, 196, 0.4);
+      margin-top: 15px;
+    }
+
+    /* Decoración abstracta de fondo */
+    .circle {
+      position: fixed;
+      width: 200px;
+      height: 200px;
+      background: rgba(150, 251, 196, 0.1);
+      border-radius: 50%;
+      z-index: -1;
+      filter: blur(50px);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="circle" style="top: 10%; left: -50px;"></div>
+  <div class="circle" style="bottom: 10%; right: -50px; background: rgba(0, 78, 146, 0.3);"></div>
+
+  <header>
+    <h1>RENACIDOS FC</h1>
+    <p class="tagline">✦ ARTE Y FÚTBOL EN CAAGUAZÚ ✦</p>
+  </header>
+
+  <section>
+    <div class="box">
+      <h2>🟢 Nuestra Esencia</h2>
+      <p>Buscamos la perfección en cada jugada. Un club diseñado para los que ven el fútbol como una obra de arte.</p>
+    </div>
+
+    <div class="box">
+      <h2>🔵 El Predio</h2>
+      <p>📍 GXVQ+WW8, Caaguazú<br>Entrenamientos bajo el cielo guaraní.</p>
+      <button class="btn-action" onclick="window.open('https://www.google.com/maps/search/?api=1&query=GXVQ%2BWW8%2C+Caaguaz%C3%BA')">VER MAPA</button>
+    </div>
+
+    <div class="box">
+      <h2>⚡ Únete al Clan</h2>
+      <p>¿Tenés el talento para renacer? Vení y demostrá lo que valés.</p>
+      <button class="btn-action" onclick="alert('¡Dale facha! Prepará tus botines que el equipo te espera.')">POSTULARME</button>
+    </div>
+  </section>
+
+</body>
+</html>
